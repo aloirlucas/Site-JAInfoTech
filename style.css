@@ -27,6 +27,8 @@ a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    display: flex;
+    
     
 }
   
@@ -49,85 +51,6 @@ nav {
 
 }
 
-/*Configuração do Menu NavBar responsivo*/
-.nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 15vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-
-/*ate aqui configuração do Menu NavBar responsivo*/
 
 main{ /*estilos do main, conteúdo do site*/
   background-color: white; /*cor do fundo do main*/
@@ -139,101 +62,6 @@ main{ /*estilos do main, conteúdo do site*/
   margin-bottom: 30px; /*essa margem embaixo não vai deixar o main que o conteúdo principal colar no footer que é o rodapé*/
   border-radius: 0px 0px 10px 10px; /*arredondamento das bordas de baixo do main*/
 }
-
-
-/*CONFIGURANDO O SLIDE*/
-
-.slide-pagina-inicial{
-  padding: 15px;
-  
-}
-
-main img{
-  width: 100%;
-  
-  
-}
-
-.slider {
-  width: 900px;
-  height: 500px;
-  overflow: hidden; /*esse comando desaparece as outras imagens, pq elas ultrapassaram o tamanho width e height*/
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.438);
-  margin-top: 5px;
-  margin-left: 30px;
- 
-  
-}
-
-.slides {
-  display: flex; /*colocando as imagens uma do lado da outra*/
-  width: 400%; /*para aparecer apenas uma imagem de cada vez, se são 4 imagens então colocamos 400%*/
-  height: 100%; /*para pegar 100% da altura*/
-  
-
-}
-
-.slide{
-  width: 25%;
-  transition: 0.5s;
-    
-}
-
-.slide img{
-  width: 100%;
-  height: 100%;
-  
-  
-}
-
-.navegation-bar{
- 
-  bottom: 20px;
-  position: absolute;
-  display: flex;
-  left: 50%; /*esses dois codigos basicamente ele serve pra mover a barra de navegação pra o centro da tela*/
-  transform: translate(-50%) ;
-}
-
-input{
-  display: none; /*tira o elemento da nossa tela*/
-}
-
-.manual-btn { /*configurando o botão de navegação*/
-  border: 2px solid #fff;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
-
-}
-
-.manual-btn:not(:last-child){ /*selecionaou as tags label, last child, o ultimo filho, mas nesse caso so ultimo filho nao recebeu esse comando*/
-  margin-right: 40px;
-}
-
-.manual-btn:hover{ /*quando o mouse passar por cima das bolinhas*/
-  background: #fff;
-  transition: 0.4s;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -75%;
-}
-
-
 
 
 
