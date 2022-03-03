@@ -18,9 +18,25 @@ body{
 }  
 
 header {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);  
     
-    
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Raleway", sans-serif, cursive;
+  
+  background: #23232e;
+  height: 15vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
+  flex-flow: row wrap; /*tornando o nav responsivo*/   
+
+}
+
+
+.logo{
+  
 }
 
 .menu{
@@ -40,7 +56,7 @@ a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
-    padding: 15px;
+    padding: 10px;
     flex-flow: wrap;
     margin: 0;
     
@@ -49,28 +65,11 @@ a {
   
 a:hover {
     opacity: 0.7;
-    color: rgb(173, 209, 88);
     transition: 0.5s;
     border-radius: 7px;  
-}
-  
-  
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Raleway", sans-serif, cursive;
-    font-weight:500;
-    background: #23232e;
-    height: 12vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
-    flex-flow: row wrap; /*tornando o nav responsivo*/
     
-
 }
-
-
-
-
+  
 main{ /*estilos do main, conteúdo do site*/
   background-color: white; /*cor do fundo do main*/
   min-width: 300px; /*respondividade minima do main (do conteúdo). Quando tiver 300 pixels ele se adapta*/
