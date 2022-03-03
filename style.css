@@ -19,6 +19,18 @@ body{
 header {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
     
+    
+}
+
+.menu{
+  display: flex;
+  flex-flow: wrap; /*Tornando responsivo*/
+  text-decoration: none;
+
+}
+
+li{
+  list-style: none; /*retirando as bolinhas do menu*/
 }
 
 
@@ -27,14 +39,16 @@ a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
-    display: flex;
+    padding: 15px;
+    flex-flow: wrap;
+    margin: 0;
     
     
 }
   
 a:hover {
     opacity: 0.7;
-    background: rgb(90, 87, 87);
+    color: blue;
     transition: 0.5s;
     border-radius: 7px;  
 }
@@ -63,7 +77,13 @@ main{ /*estilos do main, conteúdo do site*/
   border-radius: 0px 0px 10px 10px; /*arredondamento das bordas de baixo do main*/
 }
 
+img{
+  width: 100%;
+}
 
+div{
+  flex-flow: wrap;
+}
 
 footer{ /*estilos do rodapé*/
   background-color: #23232e; /*cor do fundo do rodapé*/
