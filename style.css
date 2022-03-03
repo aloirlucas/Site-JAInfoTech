@@ -57,7 +57,7 @@ a {
     text-decoration: none;
     transition: 0.3s;
     padding: 10px;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     margin: 0;
     
     
