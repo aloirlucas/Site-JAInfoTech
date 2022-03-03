@@ -13,6 +13,7 @@
 body{
   font-family: "Raleway", sans-serif, cursive;
   background-color: rgb(179, 178, 178);
+  height: 100vh;
   
 }  
 
@@ -24,7 +25,7 @@ header {
 
 .menu{
   display: flex;
-  flex-flow: wrap; /*Tornando responsivo*/
+  flex-flow: row wrap; /*Tornando responsivo*/
   text-decoration: none;
 
 }
@@ -48,7 +49,7 @@ a {
   
 a:hover {
     opacity: 0.7;
-    color: blue;
+    color: rgb(173, 209, 88);
     transition: 0.5s;
     border-radius: 7px;  
 }
@@ -61,9 +62,13 @@ nav {
     font-family: "Raleway", sans-serif, cursive;
     font-weight:500;
     background: #23232e;
-    height: 15vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
+    height: 12vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
+    flex-flow: row wrap; /*tornando o nav responsivo*/
+    
 
 }
+
+
 
 
 main{ /*estilos do main, conteúdo do site*/
@@ -77,12 +82,14 @@ main{ /*estilos do main, conteúdo do site*/
   border-radius: 0px 0px 10px 10px; /*arredondamento das bordas de baixo do main*/
 }
 
-img{
-  width: 100%;
-}
+.img1{
+    display: block; /*centralizando a imagem*/
+    margin-left: auto;/*centralizando a imagem*/
+    margin-right: auto;/*centralizando a imagem*/
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    max-width: 100%; /*deixando a imagem resposiva*/
 
-div{
-  flex-flow: wrap;
 }
 
 footer{ /*estilos do rodapé*/
