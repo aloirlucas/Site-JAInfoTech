@@ -25,7 +25,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
   font-family: "Raleway", sans-serif, cursive;  
   background: #23232e;
