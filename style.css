@@ -148,7 +148,7 @@ input{
 }
 
 .slides{
-  display: flex;
+  display: flexbox;
   width: 500%;
   height: 80%;
 
