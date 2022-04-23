@@ -109,7 +109,7 @@ footer{ /*estilos do rodapé*/
   color: white; /*cor da letra do rodapé*/
   text-align: center; /*centralizando o rodape*/
   padding: 5px 0px; /*para dar uma engordadinha nele por cima e por baixo*/
-  font-size: 0.8em; /*tamanho da letra*/
+  font-size: 0.6em; /*tamanho da letra*/
 }
 
 #contato{
@@ -128,12 +128,18 @@ h1 > p{
   font-family:'Roboto';
   text-align: center;
   font-size: 14pt;
-  color: #ff6500;
+  color: black;
   
 }
 
 #logowzp{
   width: 50px;
+  height: 25px;
+  
+}
+
+#logolocalizacao{
+  width: 25px;
   height: 25px;
   
 }
