@@ -79,12 +79,18 @@ a:hover {
 main{ /*estilos do main, conteúdo do site*/
   background-color: white; /*cor do fundo do main*/
   min-width: 300px; /*respondividade minima do main (do conteúdo). Quando tiver 300 pixels ele se adapta*/
-  max-width: 1000px; /*responsividade máxima do main (do conteúdo). Quando tiver 1000 pixels ele para de crescer*/
+  max-width: 900px; /*responsividade máxima do main (do conteúdo). Quando tiver 1000 pixels ele para de crescer*/
   margin: auto; /*centralizar o main*/
   padding: 10px; /*o conteudo vai desgrudar um pouco do main*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* sombra no main de zero de deslocamento horizontal e vertical, 10 pixels de espalhamento, preto*/
   margin-bottom: 30px; /*essa margem embaixo não vai deixar o main que o conteúdo principal colar no footer que é o rodapé*/
   border-radius: 0px 0px 10px 10px; /*arredondamento das bordas de baixo do main*/
+}
+
+div.imgprincipal{
+  min-width: 300px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .img1{
@@ -94,6 +100,7 @@ main{ /*estilos do main, conteúdo do site*/
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
     max-width: 100%; /*deixando a imagem resposiva*/
+    height: 100%;
 
 }
 
@@ -113,6 +120,10 @@ footer{ /*estilos do rodapé*/
   font-family: "Raleway", sans-serif, cursive;  
 }
 
+h1{
+  margin-top: 20px;
+}
+
 h1 > p{
   font-family:'Roboto';
   text-align: center;
@@ -125,6 +136,11 @@ h1 > p{
   width: 50px;
   height: 25px;
   
+}
+
+#formulario.contato{
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -207,5 +223,7 @@ h1 > p{
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+
+
 
 
