@@ -14,31 +14,31 @@
       <img class="logo" src="img/logo.png" alt="logo"> 
     </header>
     <nav>   
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
+      
 
       <ul class="nav-list">
         <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-        <li><a href="produtos.html">PRODUTOS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>        
         <li><a href="contato.html">CONTATO</a></li>
       </ul>
     </nav>
+   
     <main>
-      <section>    
-        <h1> <br>
+      <section>
+        <br>
           <p id="contato">Entre em contato conosco</p>
-          <p>(33) 9 8754-1282 | (33) 9 8765-5441<img src="img/icowzp.png" alt="icowzp" id="logowzp"></p>
-          <p>Rua Antônio Carlos nº 85, Centro | Ipanema/MG <img src="img/icoloca.png" alt="logolocalização" id="logolocalizacao"> </p> <br><br>
+          <p id="contatoDados">(33) 9 8754-1282 | (33) 9 8765-5441<img src="img/icowzp.png" alt="icowzp" id="logowzp"></p>
+          <p id="contatoDados">Rua Antônio Carlos nº 85, Centro | Ipanema/MG <img src="img/icoloca.png" alt="logolocalização" id="logolocalizacao"> </p> <br><br>
+        </section>
+        
+        <section class="formwzpabacontato">
+        <h1> 
          
-          <form action="http://formmail.kinghost.net/formmail.cgi" method="POST" id="formulario.contato"> 
+          <form action="" method="POST" id="formulario.contato"> 
             <input type="hidden" name="recipient" value="aloirlucasmartins@gmail.com"> <!-- Pode ser qualquer endereço de email -->
             <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
             <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
-            <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+            <input type="hidden" name="email" value="">   <!-- Deve ser uma conta de email ativa em seu domínio -->
             
             <p> 
             Nome:<br /> 
@@ -60,7 +60,15 @@
             <input type="reset" name="BTApaga" value="Apagar"> </p> 
             </form>
         </h1>
+        <br>
+        <div>
+          <figure>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=553398754-1282&amp;text=Gostaria de solicitar um orçamento de serviço" target="_self">
+            <img width="300" height="100" src="" class="imgwzpContato" alt="whatsapp" loading="lazy" srcset="img/atendimento-pelo-whatsapp.png" /></a>
+          </figure>
+        </div>
       </section>
+      
       
     </main>
     
@@ -79,3 +87,4 @@
    
   </body>
 </html>
+

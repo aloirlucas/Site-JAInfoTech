@@ -9,6 +9,8 @@
 * {
     margin: 0;
     padding: 0;
+    
+    
 }
 
 body{
@@ -58,8 +60,8 @@ a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-flow: row wrap;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -79,7 +81,7 @@ a:hover {
 main{ /*estilos do main, conteúdo do site*/
   background-color: white; /*cor do fundo do main*/
   min-width: 300px; /*respondividade minima do main (do conteúdo). Quando tiver 300 pixels ele se adapta*/
-  max-width: 900px; /*responsividade máxima do main (do conteúdo). Quando tiver 1000 pixels ele para de crescer*/
+  max-width: 950px; /*responsividade máxima do main (do conteúdo). Quando tiver 1000 pixels ele para de crescer*/
   margin: auto; /*centralizar o main*/
   padding: 10px; /*o conteudo vai desgrudar um pouco do main*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* sombra no main de zero de deslocamento horizontal e vertical, 10 pixels de espalhamento, preto*/
@@ -101,37 +103,81 @@ div.imgprincipal{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
     max-width: 100%; /*deixando a imagem resposiva*/
     height: 100%;
-
 }
+
+h1 > p{
+  font-family:'Roboto';
+  text-align: center;
+  font-size: 27pt;
+  color: black;
+  width: 100%; 
+}
+
+.h1paragrafo{
+  margin: 15px;
+  text-align: center;
+  color: #000FFE;
+}
+
+.h2paragrafo{
+  font-family:'Roboto';
+  text-align: center;
+  font-size: 18pt;
+  color: black;
+  width: 100%; 
+}
+
+
+
+.video{
+  display: block;
+  align-items: center;
+  margin: auto;
+}
+
+.imgservicos{
+  width: 350px;
+  height: 350px;
+}
+
+
 
 footer{ /*estilos do rodapé*/
   background-color: #23232e; /*cor do fundo do rodapé*/
   color: white; /*cor da letra do rodapé*/
   text-align: center; /*centralizando o rodape*/
   padding: 5px 0px; /*para dar uma engordadinha nele por cima e por baixo*/
-  font-size: 0.6em; /*tamanho da letra*/
+  font-size: 0.8em; /*tamanho da letra*/
 }
 
 #contato{
-  font-size: 16pt;
-  color: #065ab5;
+  font-size: 18pt;
+  color: #000FFE;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Raleway", sans-serif, cursive;  
+  text-align: center;
+  font-weight:500;
+}
+
+#contatoDados{
+  font-size: 14pt;
+  text-align: center;
 }
 
 h1{
   margin-top: 20px;
 }
 
-h1 > p{
-  font-family:'Roboto';
+.formwzpabacontato{
+  margin: auto;
   text-align: center;
-  font-size: 14pt;
-  color: black;
-  width: 100%;
-  
+  display: block;
+  align-items: center;
 }
+
+
+
 
 #logowzp{
   width: 50px;
@@ -148,6 +194,8 @@ h1 > p{
 #formulario.contato{
   margin: auto;
   text-align: center;
+  display: block;
+  align-items: center;
 }
 
 
@@ -164,73 +212,9 @@ h1 > p{
   margin-left: 32px;
 }
 
-.mobile-menu {
-  display: none;
-  cursor: pointer;
+.imgwzpContato{
+  margin: auto;
+  text-align: center;
+  display: block;
+  align-items: center;
 }
-
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
-}
-
-@media (max-width: 999px) {
-  body {
-    overflow: hidden;
-  }
-  .nav-list {
-    position: absolute;
-    top: 18vh;
-    right: 0;
-    width: 40vw;
-    height: 35vh;
-    background: #23232e;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
-  .mobile-menu {
-    display:block;
-    
-  }
-}
-
-.nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
-
-
-
-

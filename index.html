@@ -6,60 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J.A. InfoTech</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-slide.css">
     <link rel="shortcut icon" href="img/icofavicon.ico" type="image/x-icon">
   </head>
 
   <body>
+    
     <header>
       <img class="logo" src="img/logo.png" alt="logo"> 
     </header>
-    <nav>   
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-
+    
+    <nav>
       <ul class="nav-list">
         <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-        <li><a href="produtos.html">PRODUTOS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>        
         <li><a href="contato.html">CONTATO</a></li>
       </ul>
     </nav>
-    <main>
-      <section>
+    
+    <main>     
       
-        <div class="imgprincipal">
-          <img class="img1" src="img/2.jpg" alt="">
-        </div>
+       <div class="slider">
+            
+         <div class="slides">     
+              
+                <!--Radio Buttons (bolinhas)-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">     
+                <!--FIM Radio Buttons (bolinhas)-->
+
+
+                <!--Imagens do Slide-->
+              <div class="slide first">
+                  <img src="img/1.jpeg" alt="imagem1">         
+              </div>
+              <div class="slide">
+                  <img src="img/img1.jpeg" alt="imagem2">         
+              </div>
+              <div class="slide">
+                  <img src="img/img2.jpeg" alt="imagem3">         
+              </div>
+              <div class="slide">
+                  <img src="img/img3.jpeg" alt="imagem4">         
+              </div>
+                <!--FIM Imagens do Slide-->  
+
+                <!--Navigation auto (Bolinhas de navegação)-->
+              <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+              </div>  
+
+          </div>
+                <!--Label de cada botão, onde vamos referenciar os botões de input nos labels-->
+              <div class="manual-navigation">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+              </div>
+
+       </div>
+        <br>
+       
+        <section> 
         
-        <h1>
-          <p>Suporte técnico em informática, manutenção de computadores e notebooks.</p>
-          <p>Venda de peças e acessórios de informática.</p>
+        <h1 class="h1paragrafo">
+          SERVIÇOS          
+        </h1>
+        <h2 class="h2paragrafo">
+          <p> &#x2714 Suporte Técnico em Informática</p>
+          <p>&#x2714 Venda de Peças e Acessórios</p>
+          <p>&#x2714 Criação de Sites e Aplicativos para Android e iOS</p>
+          <p>&#x2714 Formatação de Computadores e Notebooks</p>
+          <p>&#x2714 Manutenção Corretiva e Preventiva</p>
+        </h2>
+
+        <br>
+
+        <h1 class="h1paragrafo">
+          APLICATIVOS DESENVOLVIDOS
         </h1>
 
-    
+        <div class="divvideosapp">
+          
+          <video height="600" width="300" controls class="video">
+            <source src="videos/appPromessas.mp4" type="video/mp4">
+          </video>          
+        
+        </div>  
       
+      </section> 
+      <br><br>
 
-      </section>
-
+      <div>
+        <h1 style="text-align: center;"><span style="font-size: 28px;">Atendimento Whatsapp</span></h1>        
+      </div>
       
+      <div>
+        <figure>
+          <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=553398754-1282&amp;text=Gostaria de solicitar um orçamento de serviço" target="_self">
+          <img width="300" height="100" src="" class="imgwzpContato" alt="whatsapp" loading="lazy" srcset="img/atendimento-pelo-whatsapp.png" /></a>
+        </figure>
+      </div>
+
+     
       
     </main>
     
 <footer>
-  <p>
-    Todos os direitos reservados ©2022 J.A. InfoTech
-  </p>
+  <p>Todos os direitos reservados ©2022 J.A. InfoTech</p>
   
-  <p>
-    Site Criado por Aloir Lucas | J.A. Infotech
-  </p>
-</footer>
+  <p>Site Criado por Aloir Lucas Martins | J.A. Infotech</p>
+</footer>  
     
-    
-<script src="mobile-navbar.js"></script>
-   
+   <script src="slide.js"></script>
+
   </body>
+
 </html>
