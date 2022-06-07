@@ -39,6 +39,7 @@
     margin-top: -40px;
     display: flex;
     justify-content: center;  
+    max-width: 100%;
     
   }
   
@@ -48,6 +49,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    max-width: 100%;
     
   }
   
