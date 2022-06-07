@@ -1,37 +1,31 @@
-/*SLIDE*/
-
 .slider{
     margin: 0 auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
-    max-width: 100%;
-  
+    max-width: 100%;  
   }
   
   .slides{
     width: 400%;
     height: 400px;
-    display: flex;  
-    
+    display: flex; 
   }
   
   .slides input{
-    display: none; /*ocultando os inputs*/
+    display: none; 
     max-width: 100%;
   }
   
   .slide{
     width: 25%;
     position: relative;
-    transition: 2.5s;
-     
+    transition: 2.5s;     
   }
   
   .slide img{ 
     width: 800px;
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
   
   .manual-navigation{
@@ -40,8 +34,7 @@
     margin-top: -40px;
     display: flex;
     justify-content: center;  
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
   
   .manual-btn{
@@ -50,15 +43,14 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
   
-  .manual-btn:not(:last-child){ /*menos no último item*/
+  .manual-btn:not(:last-child){ 
     margin-right: 40px;
   }
   
-  .manual-btn:hover{ /*quando passar o mouse em cima do btn ele fica branco*/
+  .manual-btn:hover{ 
     background-color: #fff;
   }
   
@@ -94,12 +86,11 @@
     justify-content: center;  
   }
   
-  .navigation-auto div:not(:last-child){ /*menos na ultima bolinha*/
+  .navigation-auto div:not(:last-child){ 
     margin-right: 40px;
-  }
+  }  
   
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{ /*todos as bolinhas que estiverem clicadas ficarao brancas*/
+  #radio1:checked ~ .navigation-auto .auto-btn1{ 
     background-color: #fff;
   }
   
