@@ -18,6 +18,7 @@
   
   .slides input{
     display: none; /*ocultando os inputs*/
+    max-width: 100%;
   }
   
   .slide{
