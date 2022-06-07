@@ -28,13 +28,13 @@ header {
 
 nav {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   font-family: "Raleway", sans-serif, cursive;  
   background: #23232e;
   height: 8vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
   flex-flow: row wrap; /*tornando o nav responsivo*/   
-
+  max-width: 100%;
 }
 
 
@@ -42,6 +42,7 @@ nav {
   display: block; /*centralizando a imagem*/
     margin-left: auto;/*centralizando a imagem*/
     margin-right: auto;/*centralizando a imagem*/
+    max-width: 100%;
 }
 
 .nav-list{
