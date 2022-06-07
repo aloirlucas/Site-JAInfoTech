@@ -8,9 +8,7 @@
 
 * {
     margin: 0;
-    padding: 0;
-    
-    
+    padding: 0;   
 }
 
 body{
@@ -18,6 +16,7 @@ body{
   background-color: rgb(179, 178, 178);
   height: 100vh; 
   width: 100vw; 
+  max-width: 100%;
 }  
 
 header {
@@ -32,30 +31,27 @@ nav {
   align-items: center;
   font-family: "Raleway", sans-serif, cursive;  
   background: #23232e;
-  height: 8vh; /*vh é uma unidade responsiva que se adapta a altura da janela do usuário*/
-  flex-flow: row wrap; /*tornando o nav responsivo*/   
+  height: 8vh; 
+  flex-flow: row wrap;  
   max-width: 100%;
 }
 
-
 .logo{
-  display: block; /*centralizando a imagem*/
-    margin-left: auto;/*centralizando a imagem*/
-    margin-right: auto;/*centralizando a imagem*/
+  display: block; 
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
 }
 
 .nav-list{
   display: flex;
-  flex-flow: row wrap; /*Tornando responsivo*/
+  flex-flow: row wrap; 
   text-decoration: none;
 }
 
 li{
-  list-style: none; /*retirando as bolinhas do menu*/
+  list-style: none; 
 }
-
-
 
 a {
     color: #fff;
@@ -65,9 +61,7 @@ a {
     padding-right: 12px;
     flex-flow: row wrap;
     margin-top: 20px;
-    margin-bottom: 10px;
-    
-    
+    margin-bottom: 10px;   
 }
   
 a:hover {
@@ -75,19 +69,18 @@ a:hover {
     transition: 0.5s;
     border-radius: 7px;  
     color: white;    
-    font-weight: bold;   
-    
+    font-weight: bold;
 }
   
-main{ /*estilos do main, conteúdo do site*/
-  background-color: white; /*cor do fundo do main*/
-  min-width: 300px; /*respondividade minima do main (do conteúdo). Quando tiver 300 pixels ele se adapta*/
-  max-width: 950px; /*responsividade máxima do main (do conteúdo). Quando tiver 1000 pixels ele para de crescer*/
-  margin: auto; /*centralizar o main*/
-  padding: 10px; /*o conteudo vai desgrudar um pouco do main*/
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* sombra no main de zero de deslocamento horizontal e vertical, 10 pixels de espalhamento, preto*/
-  margin-bottom: 30px; /*essa margem embaixo não vai deixar o main que o conteúdo principal colar no footer que é o rodapé*/
-  border-radius: 0px 0px 10px 10px; /*arredondamento das bordas de baixo do main*/
+main{ 
+  background-color: white; 
+  min-width: 300px; 
+  max-width: 950px; 
+  margin: auto; 
+  padding: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 30px; 
+  border-radius: 0px 0px 10px 10px; 
 }
 
 div.imgprincipal{
@@ -97,12 +90,12 @@ div.imgprincipal{
 }
 
 .img1{
-    display: block; /*centralizando a imagem*/
-    margin-left: auto;/*centralizando a imagem*/
-    margin-right: auto;/*centralizando a imagem*/
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
-    max-width: 100%; /*deixando a imagem resposiva*/
+    max-width: 100%; 
     height: 100%;
 }
 
@@ -134,9 +127,7 @@ h1 > p{
   font-size: 18pt;
   color: black;
   max-width: 100%; 
-  
 }
-
 
 .video{
   display: block;
@@ -149,14 +140,12 @@ h1 > p{
   height: 350px;
 }
 
-
-
-footer{ /*estilos do rodapé*/
-  background-color: #23232e; /*cor do fundo do rodapé*/
-  color: white; /*cor da letra do rodapé*/
-  text-align: center; /*centralizando o rodape*/
-  padding: 5px 0px; /*para dar uma engordadinha nele por cima e por baixo*/
-  font-size: 0.8em; /*tamanho da letra*/
+footer{ 
+  background-color: #23232e; 
+  color: white; 
+  text-align: center; 
+  padding: 5px 0px; 
+  font-size: 0.8em; 
 }
 
 #contato{
@@ -185,19 +174,14 @@ h1{
   align-items: center;
 }
 
-
-
-
 #logowzp{
   width: 50px;
-  height: 25px;
-  
+  height: 25px; 
 }
 
 #logolocalizacao{
   width: 25px;
-  height: 25px;
-  
+  height: 25px;  
 }
 
 #formulario.contato{
@@ -207,10 +191,6 @@ h1{
   align-items: center;
 }
 
-
-
-
-/*nav list*/
 .nav-list {
   list-style: none;
   display: flex;
