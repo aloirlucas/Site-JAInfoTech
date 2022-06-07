@@ -124,14 +124,5 @@
       overflow: hidden ;
       display: none;
     }
-      .slides input{
-      display: none; /*ocultando os inputs*/
-      
-    }
-    .slides{
-      width: 400%;
-      height: 320px;
-      display: flex; 
-      
-    }
+    
   }
