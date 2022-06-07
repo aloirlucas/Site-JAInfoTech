@@ -114,3 +114,14 @@
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
   }
+
+ @media (max-width: 500px){
+    .navigation-auto div{
+      overflow: hidden ;
+      display: none;
+    }
+    .navigation-auto{
+      overflow: hidden ;
+      display: none;
+    }
+  }
